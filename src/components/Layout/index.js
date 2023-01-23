@@ -1,4 +1,6 @@
+import './index.css';
 import React from 'react';
+import Box from '../Box';
 
 const Layout = (props) => {
     return (
@@ -9,8 +11,11 @@ const Layout = (props) => {
             <nav>
                 {/* Navigation component goes here */}
             </nav>
-            <main>
-                {props.children}
+            <main className="main">
+                <Box />
+                <Box />
+                <Box />
+                <Box />
             </main>
             <footer>
                 <p>Copyright © {new Date().getFullYear()} My Name</p>
