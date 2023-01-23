@@ -18,7 +18,7 @@ const Layout = (props) => {
                 <Box />
             </main>
             <footer>
-                <p>Copyright © {new Date().getFullYear()} My Name</p>
+                <p>Copyright © {new Date().getFullYear()} Duong Vo</p>
             </footer>
         </div>
     );
