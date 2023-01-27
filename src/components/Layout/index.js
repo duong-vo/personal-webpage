@@ -1,10 +1,12 @@
 import './index.css';
 import React from 'react';
 import Box from '../Box';
+import About from '../About';
 
 const Layout = (props) => {
     return (
         <div className="container">
+            <About />
             <header>
                 <h1>My Portfolio</h1>
             </header>

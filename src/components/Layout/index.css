@@ -1,8 +1,9 @@
 .main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 400px [col-start]);
+    grid-template-rows: repeat(2, 150px [row-start]);
+    justify-items: end;
 }
-
 .box {
     background-color: royalblue;
 }
