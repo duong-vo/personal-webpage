@@ -28,11 +28,11 @@ const Box = () => {
     }, []);
 
     return (
-        <div>
+        <div className="box-container">
             {title.map(item => (
                 <div class="box">
                     <div class="pin-text">
-                        <li key={item.id}>{item.name}</li>
+                        <h3 key={item.id}>{item.name}</h3>
                         <p>Description</p>
                     </div>
                 </div>

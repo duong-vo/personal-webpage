@@ -15,10 +15,9 @@ const Layout = (props) => {
             </nav>
             <main className="main">
                 <Box />
-                <Box />
-                <Box />
-                <Box />
             </main>
+            <br/>
+            <br/>
             <footer>
                 <p>Copyright © {new Date().getFullYear()} Duong Vo</p>
             </footer>
