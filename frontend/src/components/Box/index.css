@@ -9,7 +9,7 @@
 	row-gap: 20px;
 	column-gap: 250px;
 }
-.box {
+/* .box {
     position: relative;
     width: 300px;
     height: 120px;
@@ -44,4 +44,57 @@
 }
 .box:hover .pin-text {
     background-color: rgba(255, 255, 255, 1);
-}
+} */
+
+.github-pinned-repo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    height: 150px;
+    width: 400px;
+    background-color: #f2f2f2;
+  }
+  
+  .github-pinned-repo-left {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .github-pinned-repo-left img {
+    height: 100%;
+  }
+  
+  .github-pinned-repo-right {
+    width: 100%;
+  }
+  
+  .github-pinned-repo-right h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .github-pinned-repo-details {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .github-pinned-repo-details .language {
+    margin-right: 20px;
+    color: #555;
+  }
+  
+  .github-pinned-repo-details .stars {
+    color: #f1c40f;
+  }
+  
+  .github-pinned-repo-right p {
+    font-size: 14px;
+    color: #555;
+  }
