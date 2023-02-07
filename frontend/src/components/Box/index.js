@@ -30,20 +30,22 @@ const Box = () => {
     return (
         <div className="box-container">
             {title.map(item => (
-            <div class="github-pinned-repo">
-                <div class="github-pinned-repo-left">
-                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github logo" />
-                </div>
-                <div class="github-pinned-repo-right">
-                    <h3>{item.name}</h3>
-                    <div class="github-pinned-repo-details">
-                        <span class="language">JavaScript</span>
-                        <span class="stars">★ 123</span>
+                <a href={item.html_url} style={{ textDecoration: 'none' }}>
+                    <div class="github-pinned-repo">
+                        <div class="github-pinned-repo-left">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github logo" />
+                        </div>
+                        <div class="github-pinned-repo-right">
+                            <h3>{item.name}</h3>
+                            <div class="github-pinned-repo-details">
+                                <span class="language">{item.language}</span>
+                                <span class="stars">★ {item.stargazers_count}</span>
+                            </div>
+                            <p>{item.description}</p>
+                        </div>
                     </div>
-                    <p>A brief description of my pinned repository</p>
-                </div>
-            </div>
-           ))}
+                </a>
+            ))}
         </div>
         // <div className="box-container">
         //     {title.map(item => (
