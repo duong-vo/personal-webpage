@@ -1,11 +1,11 @@
 .box-container {
-	width: 50%;
+	width: 88%;
   margin: 20px auto;
 	display: grid;
 	grid-template-rows: 150px 150px;
 	grid-template-columns: 150px 150px 150px;
-	row-gap: 20px;
-	column-gap: 250px;
+	row-gap: 25px;
+	column-gap: 300px;
 }
 /* .box {
     position: relative;
@@ -55,7 +55,7 @@
     border-radius: 25px;
     background-color: #f2f2f2;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.2s ease-in-out;  
+    transition: all 0.5s ease-in-out;  
   }
   
   .github-pinned-repo-left {

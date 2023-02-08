@@ -19,7 +19,7 @@ const Layout = (props) => {
             <br/>
             <br/>
             <footer>
-                <p>Copyright © {new Date().getFullYear()} Duong Vo</p>
+                <p>Copyright © {new Date().getFullYear()} Duong Vo. Created Using React</p>
             </footer>
         </div>
     );
