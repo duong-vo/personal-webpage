@@ -1,7 +1,9 @@
 import './index.css';
 import React from 'react';
 import Box from '../Box';
+import { BrowserRouter as Route, Routes} from 'react-router-dom';
 import About from '../About';
+import PDFRoute from '../PDFRoute';
 
 const Layout = (props) => {
     return (
@@ -16,8 +18,8 @@ const Layout = (props) => {
             <main className="main">
                 <Box />
             </main>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <footer>
                 <p>Copyright © {new Date().getFullYear()} Duong Vo. Created Using React</p>
             </footer>

@@ -1,7 +1,14 @@
 import './index.css';
-import React from 'react';
+import React, { useRef } from 'react';
+import Box from '../Box';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+
 
 const About = (props) => {
+    const boxRef = useRef(null)
+    const handleClick = () => {
+        boxRef.current.scrollIntoView({ behavior: 'smooth' });
+      };
     return (
         <html>
             <head>
@@ -32,11 +39,14 @@ const About = (props) => {
                     </div>
 
                     <div class="about-right">
-                        <h1>hi<span>!</span></h1>
-                        <h2>Here's who I am & what I do</h2>
+                        <h1>HI<span>!</span></h1>
+                        <h2>Great to see you</h2>
                         <div class="about-btns">
                             <button type="button" class="btn btn-pink">resume</button>
-                            <button type="button" class="btn btn-white">projects</button>
+                            <button type="button" class="btn btn-white" onClick={handleClick}>projects</button>
+                            <Element name="Box">
+                                <div ref={boxRef}/>
+                            </Element>
                         </div>
 
                         <div class="about-para">
