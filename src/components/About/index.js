@@ -21,7 +21,7 @@ const About = (props) => {
                             <div>
                                 <div class="shadow">
                                     <div class="about-img">
-                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/images/about_me.jpg" alt="about image" /></a>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/about_me.jpg" alt="about image" /></a>
                                     </div>
                                 </div>
 
