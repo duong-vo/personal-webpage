@@ -7,7 +7,7 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 const About = (props) => {
     const boxRef = useRef(null)
     const handleClick = () => {
-        boxRef.current.scrollIntoView({ behavior: 'smooth' });
+        boxRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
       };
     return (
         <html>
@@ -21,7 +21,7 @@ const About = (props) => {
                             <div>
                                 <div class="shadow">
                                     <div class="about-img">
-                                        <img src="/images/about_me.jpg" alt="about image" />
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/images/about_me.jpg" alt="about image" /></a>
                                     </div>
                                 </div>
 
@@ -39,10 +39,10 @@ const About = (props) => {
                     </div>
 
                     <div class="about-right">
-                        <h1>HI<span>!</span></h1>
+                        <h1>👋HI<span>!</span></h1>
                         <h2>Great to see you</h2>
                         <div class="about-btns">
-                            <button type="button" class="btn btn-pink">resume</button>
+                            <a href="mailto:duong.kej@gmail.com"><button type="button" class="btn btn-pink">contact</button></a>
                             <button type="button" class="btn btn-white" onClick={handleClick}>projects</button>
                             <Element name="Box">
                                 <div ref={boxRef}/>
@@ -50,13 +50,11 @@ const About = (props) => {
                         </div>
 
                         <div class="about-para">
-                            <p>I'm a computer science Major at Miami University.</p>
-                            <p>Please check out my project, they are pretty cool!</p>
+                            <p>I'm a computer science Major at Miami University and an aspiring software engineer who loves to explore the software world.</p>
+                            <p>Please check out my projects, I hope you find it interesting!</p>
                         </div>
                     </div>
                 </div>
-
-
             </body>
         </html>
     );

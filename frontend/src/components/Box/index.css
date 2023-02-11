@@ -1,6 +1,8 @@
 .box-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
 	width: 95%;
-  margin: 20px auto;
 	display: grid;
 	grid-template-rows: 150px 150px;
 	grid-template-columns: 150px 150px 150px;
